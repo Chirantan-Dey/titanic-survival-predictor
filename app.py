@@ -34,7 +34,7 @@ if st.button("Predict Survival"):
 
     # Display the prediction
     if prediction == 1:
-        st.write(f"**<font color='green'>The passenger is likely to survive.</font>**", unsafe_allow_html=True)
+        st.success("The passenger is likely to survive.✅", icon="✅")
         st.balloons()
     else:
-        st.write(f"**<font color='red'>The passenger is unlikely to survive.</font>**", unsafe_allow_html=True)
+        st.error("The passenger is unlikely to survive.😢", icon="😢")
