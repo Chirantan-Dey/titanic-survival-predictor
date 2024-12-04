@@ -33,8 +33,8 @@ if st.button("Predict Survival"):
     prediction = titanic_model.predict(input_data)
 
     # Display the prediction
-    if prediction[0] == 1:
-        st.write("The passenger is likely to survive.")
+    if prediction == 1:
+        st.write(f"**<font color='green'>The passenger is likely to survive.</font>**", unsafe_allow_html=True)
         st.balloons()
     else:
-        st.write("The passenger is unlikely to survive 😔")  # Add sad emoji
+        st.write(f"**<font color='red'>The passenger is unlikely to survive.</font>**", unsafe_allow_html=True)
