@@ -5,8 +5,10 @@ import pickle
 
 
 titanic_model = pickle.load(open('titanic_model.pkl', 'rb'))
+
+st.set_page_config(page_title="Titanic Survival Prediction", page_icon="🛳️", layout="centered")
 # Create a title for the app
-st.title("Titanic: Survival Prediction App")
+st.title("Titanic: Survival Prediction")
 
 
 
